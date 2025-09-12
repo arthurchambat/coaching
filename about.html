@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arthur Chambat - Parcours</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+body {font-family:'Inter',sans-serif;margin:0;padding:0;background:#f8fafc;color:#333;}
+header {background:#1e3a8a;color:white;padding:50px 20px;text-align:center;position:relative;}
+header h1{margin:0;font-size:2.5em;}
+header p{margin:10px 0 0;font-size:1.2em;opacity:0.9;}
+header img {position:absolute;top:20px;right:20px;width:120px;height:120px;border-radius:50%;object-fit:cover;border:3px solid white;}
+/* menu */
+.navbar {margin-top:15px;display:flex;justify-content:center;gap:30px;}
+.navbar a {color:white;text-decoration:none;font-weight:600;transition:opacity 0.3s;}
+.navbar a:hover {opacity:0.7;}
+.navbar a.active {border-bottom:2px solid white;padding-bottom:2px;}
+/* icône maison sobre */
+.home-icon {position:absolute;left:20px;top:20px;font-size:1.4em;text-decoration:none;color:white;filter:grayscale(100%);}
+.container {max-width:1000px;margin:40px auto;padding:0 20px;}
+.section-title {text-align:center;font-size:1.8em;font-weight:700;margin-bottom:30px;color:#1e3a8a;}
+.experience {background:white;border-radius:15px;padding:25px;margin-bottom:20px;box-shadow:0 4px 12px rgba(0,0,0,0.08);display:flex;align-items:flex-start;gap:20px;}
+.exp-logo {flex-shrink:0;width:60px;height:60px;object-fit:contain;margin-top:5px;}
+.exp-content {flex:1;}
+.exp-content h3 {margin-top:0;color:#1e3a8a;font-size:1.3em;}
+.exp-content ul {margin-top:10px;padding-left:20px;}
+.exp-content li {margin-bottom:5px;line-height:1.5;}
+a {text-decoration:none;}
+a.button {color:white;margin-right:15px;display:inline-block;margin-top:20px;font-weight:600;padding:12px 25px;border-radius:25px;background:#3b82f6;transition: background 0.3s;}
+a.button:hover {background:#1e3a8a;}
+.emoji {font-size:1.2em;margin-right:5px;}
+.bottom-container {display:flex; gap:20px; flex-wrap:wrap;}
+.block {border-radius:15px; padding:25px; box-shadow:0 4px 12px rgba(0,0,0,0.08); display:flex; align-items:flex-start; gap:20px; background:white; flex:1;}
+@media(max-width:900px) {.bottom-container {flex-direction:column;}}
+</style>
+</head>
+<body>
+<header>
+  <a href="index.html" class="home-icon">⌂</a>
+  <h1>Arthur Chambat</h1>
+  <p>Mon Parcours</p>
+  <img src="photo.jpg" alt="Photo Arthur Chambat">
+  <div class="navbar">
+    <a href="about.html" class="active">About me</a>
+    <a href="tarifs.html">Tarifs</a>
+  </div>
+</header>
+
+<div class="container">
+
+<div class="section-title">Grande École / HEC & X-HEC Entrepreneur</div>
+<div class="experience">
+  <img src="hec.png" alt="HEC Paris" class="exp-logo">
+  <div class="exp-content">
+    <h3>HEC Paris – MiM & X-HEC Entrepreneur 🎓</h3>
+    <ul>
+      <li><strong>2022–2026</strong></li>
+      <li><span class="emoji">🎯</span> Admission parallèle : GMAT 710, lettres de motivation et entretiens de motivation</li>
+      <li><span class="emoji">📊</span> Compétences acquises : management, stratégie, entrepreneuriat</li>
+      <li><span class="emoji">🤝</span> Leadership pratique via projets entrepreneuriaux</li>
+    </ul>
+  </div>
+</div>
+
+<div class="section-title">Bachelor / École Polytechnique</div>
+<div class="experience">
+  <img src="x.png" alt="École Polytechnique" class="exp-logo">
+  <div class="exp-content">
+    <h3>École Polytechnique 🎓</h3>
+    <ul>
+      <li><strong>2019–2022</strong></li>
+      <li><span class="emoji">📝</span> Admission sur dossier, entretiens de motivation et de mathématiques</li>
+      <li><span class="emoji">🌍</span> Exchange Semester EPFL – sélection via dossier, lettres de motivation et entretiens</li>
+      <li><span class="emoji">💡</span> Compétences acquises : analyse avancée, data science, résolution de problèmes complexes</li>
+    </ul>
+  </div>
+</div>
+
+<div class="section-title">Lycée & Admissions UK</div>
+<div class="bottom-container">
+  <div class="block">
+    <img src="france.png" alt="Lycée Français de Singapour" class="exp-logo">
+    <div class="exp-content">
+      <h3>Lycée Français de Singapour 🏫</h3>
+      <ul>
+        <li><strong>2017–2019</strong></li>
+        <li><span class="emoji">💬</span> International student – anglais avancé et adaptation à un environnement multiculturel</li>
+        <li><span class="emoji">📚</span> Rigueur académique et méthodologie</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="block">
+    <img src="ucas.png" alt="UCAS" class="exp-logo">
+    <div class="exp-content">
+      <h3>Admissions Bachelor 🇬🇧</h3>
+      <ul>
+        <li><span class="emoji">📝</span> Sélection via personal statement, tests d’aptitude (PAT pour Oxford), et entretiens</li>
+        <li>Oxford, Imperial College, UCL</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Contact discret -->
+<div style="text-align:center; margin-top:40px;">
+  <p style="font-weight:600; margin-bottom:10px;">Me contacter</p>
+  <div style="display:inline-flex; gap:25px; align-items:center; justify-content:center;">
+    <a href="mailto:arthurchambat@gmail.com">
+      <img src="gmail.png" alt="Email" style="width:50px; height:50px; object-fit:contain;">
+    </a>
+    <a href="https://wa.me/33612345678" target="_blank">
+      <img src="whatsapp.png" alt="WhatsApp" style="width:50px; height:50px; object-fit:contain;">
+    </a>
+  </div>
+</div>
+
+<!-- Liens bas de page -->
+<div style="text-align:center; margin-top:30px; display:flex; justify-content:center; gap:20px;">
+  <a href="index.html" class="button">Retour à l'accueil</a>
+  <a href="tarifs.html" class="button">Voir mes services</a>
+</div>
+
+<!-- Bloc LinkedIn flottant -->
+<div style="position:fixed; top:50%; right:10px; transform:translateY(-50%); z-index:1000;">
+  <a href="https://www.linkedin.com/in/tonprofil" target="_blank">
+    <img src="linkedin.png" alt="LinkedIn" style="width:40px; height:40px;">
+  </a>
+</div>
+
+</div>
+</body>
+</html>

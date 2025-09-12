@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arthur Chambat - Accueil</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {margin:0; padding:0; box-sizing:border-box; font-family:'Inter', sans-serif;}
+    body, html {height:100%;}
+
+    header {
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:0 50px;
+      height:100vh;
+      background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    }
+
+    .intro {
+      max-width:600px;
+    }
+
+    .intro h1 {
+      font-size:3em;
+      margin-bottom:20px;
+      font-weight:700;
+      color:#1f2937;
+    }
+
+    .intro h2 {
+      font-size:1.5em;
+      margin-bottom:20px;
+      font-weight:600;
+      color:#2563eb;
+    }
+
+    .intro p {
+      font-size:1.1em;
+      margin-bottom:30px;
+      color:#4b5563;
+      line-height:1.5;
+    }
+
+    .btn {
+      display:inline-block;
+      margin-right:15px;
+      padding:12px 30px;
+      border-radius:30px;
+      background:#3b82f6;
+      color:white;
+      text-decoration:none;
+      font-weight:600;
+      transition:all 0.3s;
+    }
+
+    .btn:hover {
+      background:#1e3a8a;
+    }
+
+    .photo {
+      flex-shrink:0;
+      width:300px;
+      height:300px;
+      border-radius:50%;
+      border:4px solid #fff;
+      object-fit:cover;
+      box-shadow:0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width:900px) {
+      header {
+        flex-direction:column;
+        text-align:center;
+        padding:40px 20px;
+      }
+
+      .photo {
+        margin-top:30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="intro">
+      <h1>Arthur Chambat</h1>
+      <h2>Expert en coaching pour admissions sélectives</h2>
+      <p>Ancien étudiant du <strong>Bachelor de l’X</strong>, j’accompagne aujourd’hui les étudiants ambitieux à intégrer les programmes les plus sélectifs : Bachelor de l’X, admissions UCAS, et Masters en management par voie parallèle. Actuellement étudiant au <strong>MiM à HEC</strong> et en <strong>M2 du Master X HEC Entrepreneur</strong>, je mets mon expérience et mon expertise au service de vos ambitions pour maximiser vos chances de succès</p>      
+      <a href="about.html" class="btn">En savoir plus sur moi</a>
+      <a href="tarifs.html" class="btn">Découvrir mes services</a>
+    </div>
+
+    <div style="display:flex; flex-direction:column; align-items:center;">
+      <img src="photo.jpg" alt="Photo Arthur Chambat" class="photo">
+
+      <!-- Bloc contact centré horizontalement sous la photo -->
+      <div style="display:flex; flex-direction:column; align-items:center; gap:10px; text-align:center; margin-top:20px;">
+        <p style="font-weight:600; margin:0;">Me contacter</p>
+        <div style="display:flex; gap:15px; justify-content:center; align-items:center;">
+          <a href="mailto:arthurchambat@gmail.com">
+            <img src="gmail.png" alt="Email" style="width:50px; height:50px; object-fit:contain;">
+          </a>
+          <a href="https://wa.me/33612345678" target="_blank">
+            <img src="whatsapp.png" alt="WhatsApp" style="width:50px; height:50px; object-fit:contain;">
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+</body>
+</html>
