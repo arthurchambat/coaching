@@ -55,6 +55,13 @@ a {text-decoration:none; transition:background 0.3s;}
 .package-vip {background:#bfdbfe;}
 .button {background:#3b82f6; color:white; padding:12px 25px; border-radius:25px; font-weight:600; text-decoration:none;}
 .button:hover {background:#1e3a8a;}
+
+/* mobile-specific styles */
+@media (max-width: 768px) {
+  header img {
+    display: none; /* hide photo on mobile */
+  }
+}
 </style>
 </head>
 <body>
@@ -71,7 +78,7 @@ a {text-decoration:none; transition:background 0.3s;}
 <div class="container">
 
 <!-- Services à la carte -->
-<div class="section-title">Services à la carte</div>
+<div class="section-title">Services 'à la carte'</div>
 <div class="services">
   <div class="card">
     <h2>Relecture & Feedback écrit</h2>
@@ -82,7 +89,7 @@ a {text-decoration:none; transition:background 0.3s;}
   <div class="card">
     <h2>Entretien blanc</h2>
     <p><span>Détail :</span> Simulation complète d’entretien de 1h<br>
-       <span>Structure :</span> 30-45 min entretien + 15-30 min feedback (en fonction du besoin) <br>
+       <span>Structure :</span> 30-45 min entretien + 15-30 min feedback<br>
        <span>Objectif :</span> Préparer vos réponses et améliorer votre aisance</p>
     <p class="price">75 €</p>
   </div>
@@ -104,7 +111,7 @@ a {text-decoration:none; transition:background 0.3s;}
   <div class="card package-vip">
     <h2>VIP</h2>
     <p><span>Prestations :</span> Relectures illimitées + 4 Entretiens blancs</p>
-    <p class="price"><span class="old-price">675 €</span>499 €</p>
+    <p class="price"><span class="old-price">600 €</span>499 €</p>
   </div>
 </div>
 
