@@ -11,12 +11,10 @@ header {background:#1e3a8a;color:white;padding:50px 20px;text-align:center;posit
 header h1{margin:0;font-size:2.5em;}
 header p{margin:10px 0 0;font-size:1.2em;opacity:0.9;}
 header img {position:absolute;top:20px;right:20px;width:120px;height:120px;border-radius:50%;object-fit:cover;border:3px solid white;}
-/* menu */
 .navbar {margin-top:15px;display:flex;justify-content:center;gap:30px;}
 .navbar a {color:white;text-decoration:none;font-weight:600;transition:opacity 0.3s;}
 .navbar a:hover {opacity:0.7;}
 .navbar a.active {border-bottom:2px solid white;padding-bottom:2px;}
-/* icône maison sobre */
 .home-icon {position:absolute;left:20px;top:20px;font-size:1.4em;text-decoration:none;color:white;filter:grayscale(100%);}
 .container {max-width:1000px;margin:40px auto;padding:0 20px;}
 .section-title {text-align:center;font-size:1.8em;font-weight:700;margin-bottom:30px;color:#1e3a8a;}
@@ -24,7 +22,7 @@ header img {position:absolute;top:20px;right:20px;width:120px;height:120px;borde
 .exp-logo {flex-shrink:0;width:60px;height:60px;object-fit:contain;margin-top:5px;}
 .exp-content {flex:1;}
 .exp-content h3 {margin-top:0;color:#1e3a8a;font-size:1.3em;}
-.exp-content ul {margin-top:10px;padding-left:0;list-style:none;} /* ✅ puces supprimées */
+.exp-content ul {margin-top:10px;padding-left:0;list-style:none;}
 .exp-content li {margin-bottom:5px;line-height:1.5;}
 a {text-decoration:none;}
 a.button {color:white;margin-right:15px;display:inline-block;margin-top:20px;font-weight:600;padding:12px 25px;border-radius:25px;background:#3b82f6;transition: background 0.3s;}
@@ -33,13 +31,24 @@ a.button:hover {background:#1e3a8a;}
 .bottom-container {display:flex; gap:20px; flex-wrap:wrap;}
 .block {border-radius:15px; padding:25px; box-shadow:0 4px 12px rgba(0,0,0,0.08); display:flex; align-items:flex-start; gap:20px; background:white; flex:1;}
 @media(max-width:900px) {.bottom-container {flex-direction:column;}}
+@media (max-width: 768px) {header img {display:none;}}
 
-/* ✅ mobile : retirer la photo */
-@media (max-width: 768px) {
-  header img {
-    display:none;
-  }
-}
+/* Contact section */
+.contact-section {text-align:center; margin-top:40px;}
+.contact-section p {font-weight:600; margin-bottom:10px; font-size:1.1em;}
+.contact-icons {display:inline-flex; gap:25px; align-items:center; justify-content:center; margin-top:10px;}
+.contact-icons img {width:50px; height:50px; object-fit:contain;}
+
+/* Reviews section */
+.reviews {background:#f3f4f6; padding:50px 20px; text-align:center; margin-top:50px;}
+.reviews h2 {font-size:2em; color:#1e3a8a; margin-bottom:30px;}
+.review-container {display:flex; flex-direction:row; gap:20px; justify-content:center; flex-wrap:wrap;}
+.review {background:white; padding:20px; border-radius:15px; max-width:300px; box-shadow:0 4px 12px rgba(0,0,0,0.08); text-align:left;}
+.review p {margin-bottom:10px; font-size:0.95em; color:#4b5563; line-height:1.4;}
+.author {font-weight:600; color:#111; font-size:0.9em;}
+
+@media(max-width:900px) {.review-container {flex-direction:column; align-items:center;}}
+@media(max-width:600px){.contact-icons img {width:40px;height:40px;}}
 </style>
 </head>
 <body>
@@ -58,7 +67,7 @@ a.button:hover {background:#1e3a8a;}
 
 <div class="section-title">Grande École / HEC & X-HEC Entrepreneur</div>
 <div class="experience">
-  <img src="HEC.png" alt="HEC Paris" class="exp-logo">
+  <img src="hec.png" alt="HEC Paris" class="exp-logo">
   <div class="exp-content">
     <h3>HEC Paris – MiM & X-HEC Entrepreneur 🎓</h3>
     <ul>
@@ -72,7 +81,7 @@ a.button:hover {background:#1e3a8a;}
 
 <div class="section-title">Bachelor / École Polytechnique</div>
 <div class="experience">
-  <img src="X.png" alt="École Polytechnique" class="exp-logo">
+  <img src="x.png" alt="École Polytechnique" class="exp-logo">
   <div class="exp-content">
     <h3>École Polytechnique 🎓</h3>
     <ul>
@@ -99,7 +108,7 @@ a.button:hover {background:#1e3a8a;}
   </div>
 
   <div class="block">
-    <img src="UCAS.png" alt="UCAS" class="exp-logo">
+    <img src="ucas.png" alt="UCAS" class="exp-logo">
     <div class="exp-content">
       <h3>Admissions Bachelor 🇬🇧</h3>
       <ul>
@@ -110,26 +119,46 @@ a.button:hover {background:#1e3a8a;}
   </div>
 </div>
 
-<!-- Contact discret -->
-<div style="text-align:center; margin-top:40px;">
-  <p style="font-weight:600; margin-bottom:10px;">Me contacter</p>
-  <div style="display:inline-flex; gap:25px; align-items:center; justify-content:center;">
+<!-- Contact -->
+<div class="contact-section">
+  <p>Vous souhaitez un accompagnement personnalisé ?</p>
+  <p>Pour un <strong>rendez-vous gratuit de 15 minutes</strong>, cliquez ci-dessous :</p>
+  <div class="contact-icons">
     <a href="mailto:arthurchambat@gmail.com">
-      <img src="gmail.png" alt="Email" style="width:50px; height:50px; object-fit:contain;">
+      <img src="gmail.png" alt="Email">
     </a>
     <a href="https://wa.me/33612345678" target="_blank">
-      <img src="whatsapp.png" alt="WhatsApp" style="width:50px; height:50px; object-fit:contain;">
+      <img src="whatsapp.png" alt="WhatsApp">
     </a>
   </div>
 </div>
 
-<!-- Liens bas de page -->
+<!-- Reviews -->
+<section class="reviews">
+  <h2>Ce que disent les étudiants</h2>
+  <div class="review-container">
+    <div class="review">
+      <p>"Arthur m’a aidé à structurer mes candidatures pour UCAS. Ses conseils étaient toujours très concrets et bienveillants, on sent qu’il a vécu le processus lui-même. Résultat : j’ai reçu deux offres dont celle que je visais en priorité."</p>
+      <p class="author">— Camille, admise à King's College London</p>
+    </div>
+    <div class="review">
+      <p>"Au départ j’étais vraiment stressé par les entretiens oraux, Arthur m’a fait passer plusieurs simulations. Grâce à ses retours précis et encourageants, j’ai gagné en confiance et ça a tout changé le jour J."</p>
+      <p class="author">— Thomas, intégré au Bachelor de l’X</p>
+    </div>
+    <div class="review">
+      <p>"Ce que j’ai le plus apprécié c’est sa disponibilité. Même tard le soir il prenait le temps de relire mes essais. On sent qu’il prend à cœur la réussite des étudiants qu’il accompagne."</p>
+      <p class="author">— Sarah, admise en Master à HEC</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer links -->
 <div style="text-align:center; margin-top:30px; display:flex; justify-content:center; gap:20px;">
   <a href="index.html" class="button">Retour à l'accueil</a>
   <a href="tarifs.html" class="button">Voir mes services</a>
 </div>
 
-<!-- Bloc LinkedIn flottant -->
+<!-- LinkedIn flottant -->
 <div style="position:fixed; top:50%; right:10px; transform:translateY(-50%); z-index:1000;">
   <a href="https://www.linkedin.com/in/arthur-chambat/" target="_blank">
     <img src="linkedin.png" alt="LinkedIn" style="width:40px; height:40px;">
