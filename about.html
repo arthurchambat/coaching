@@ -24,7 +24,7 @@ header img {position:absolute;top:20px;right:20px;width:120px;height:120px;borde
 .exp-logo {flex-shrink:0;width:60px;height:60px;object-fit:contain;margin-top:5px;}
 .exp-content {flex:1;}
 .exp-content h3 {margin-top:0;color:#1e3a8a;font-size:1.3em;}
-.exp-content ul {margin-top:10px;padding-left:20px;}
+.exp-content ul {margin-top:10px;padding-left:0;list-style:none;} /* ✅ puces supprimées */
 .exp-content li {margin-bottom:5px;line-height:1.5;}
 a {text-decoration:none;}
 a.button {color:white;margin-right:15px;display:inline-block;margin-top:20px;font-weight:600;padding:12px 25px;border-radius:25px;background:#3b82f6;transition: background 0.3s;}
@@ -33,6 +33,13 @@ a.button:hover {background:#1e3a8a;}
 .bottom-container {display:flex; gap:20px; flex-wrap:wrap;}
 .block {border-radius:15px; padding:25px; box-shadow:0 4px 12px rgba(0,0,0,0.08); display:flex; align-items:flex-start; gap:20px; background:white; flex:1;}
 @media(max-width:900px) {.bottom-container {flex-direction:column;}}
+
+/* ✅ mobile : retirer la photo */
+@media (max-width: 768px) {
+  header img {
+    display:none;
+  }
+}
 </style>
 </head>
 <body>
@@ -49,25 +56,25 @@ a.button:hover {background:#1e3a8a;}
 
 <div class="container">
 
-<div class="section-title">Master in management – Programme Grande École</div>
+<div class="section-title">Grande École / HEC & X-HEC Entrepreneur</div>
 <div class="experience">
-  <img src="HEC.png" alt="HEC Paris" class="exp-logo">
+  <img src="hec.png" alt="HEC Paris" class="exp-logo">
   <div class="exp-content">
-    <h3>HEC Paris – Master in management (spécialisation X-HEC Entrepreneur) 🎓</h3>
+    <h3>HEC Paris – MiM & X-HEC Entrepreneur 🎓</h3>
     <ul>
       <li><strong>2022–2026</strong></li>
-      <li><span class="emoji">🎯</span> Admission parallèle : GMAT 710, lettres et entretiens de motivation</li>
-      <li><span class="emoji">📊</span> Compétences acquises : management, stratégie, finance, entrepreneuriat</li>
+      <li><span class="emoji">🎯</span> Admission parallèle : GMAT 710, lettres de motivation et entretiens de motivation</li>
+      <li><span class="emoji">📊</span> Compétences acquises : management, stratégie, entrepreneuriat</li>
       <li><span class="emoji">🤝</span> Leadership pratique via projets entrepreneuriaux</li>
     </ul>
   </div>
 </div>
 
-<div class="section-title">Bachelor of Science</div>
+<div class="section-title">Bachelor / École Polytechnique</div>
 <div class="experience">
-  <img src="X.png" alt="École Polytechnique" class="exp-logo">
+  <img src="x.png" alt="École Polytechnique" class="exp-logo">
   <div class="exp-content">
-    <h3>École Polytechnique – Bachelor of Science (spécialisation Mathématiques et Sciences de l'informatique) 🎓</h3>
+    <h3>École Polytechnique 🎓</h3>
     <ul>
       <li><strong>2019–2022</strong></li>
       <li><span class="emoji">📝</span> Admission sur dossier, entretiens de motivation et de mathématiques</li>
@@ -92,12 +99,12 @@ a.button:hover {background:#1e3a8a;}
   </div>
 
   <div class="block">
-    <img src="UCAS.png" alt="UCAS" class="exp-logo">
+    <img src="ucas.png" alt="UCAS" class="exp-logo">
     <div class="exp-content">
       <h3>Admissions Bachelor 🇬🇧</h3>
       <ul>
-        <li><span class="emoji">📝</span> Sélection via personal statement, tests d’aptitude (PAT pour Oxford) et entretiens</li>
-        <li>Oxford, Imperial College, UCL</li>
+        <li><span class="emoji">📝</span> Sélection via personal statement, tests d’aptitude (PAT pour Oxford), et entretiens</li>
+        <li><span class="emoji">🎓</span>Oxford, Imperial College, UCL</li>
       </ul>
     </div>
   </div>
