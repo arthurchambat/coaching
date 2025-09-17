@@ -3,137 +3,229 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Arthur Chambat - Parcours</title>
+<title>Arthur Chambat - Accueil</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-body {font-family:'Inter',sans-serif;margin:0;padding:0;background:#f8fafc;color:#333;}
-header {background:#1e3a8a;color:white;padding:50px 20px;text-align:center;position:relative;}
-header h1{margin:0;font-size:2.5em;}
-header p{margin:10px 0 0;font-size:1.2em;opacity:0.9;}
-header img {position:absolute;top:20px;right:20px;width:120px;height:120px;border-radius:50%;object-fit:cover;border:3px solid white;}
-.navbar {margin-top:15px;display:flex;justify-content:center;gap:30px;}
-.navbar a {color:white;text-decoration:none;font-weight:600;transition:opacity 0.3s;}
-.navbar a:hover {opacity:0.7;}
-.navbar a.active {border-bottom:2px solid white;padding-bottom:2px;}
-.home-icon {position:absolute;left:20px;top:20px;font-size:1.4em;text-decoration:none;color:white;filter:grayscale(100%);}
-.container {max-width:1000px;margin:40px auto;padding:0 20px;}
-.section-title {text-align:center;font-size:1.8em;font-weight:700;margin-bottom:30px;color:#1e3a8a;}
-.experience {background:white;border-radius:15px;padding:25px;margin-bottom:20px;box-shadow:0 4px 12px rgba(0,0,0,0.08);display:flex;align-items:flex-start;gap:20px;}
-.exp-logo {flex-shrink:0;width:60px;height:60px;object-fit:contain;margin-top:5px;}
-.exp-content {flex:1;}
-.exp-content h3 {margin-top:0;color:#1e3a8a;font-size:1.3em;}
-.exp-content ul {margin-top:10px;padding-left:0;list-style:none;}
-.exp-content li {margin-bottom:5px;line-height:1.5;}
-a {text-decoration:none;}
-a.button {color:white;margin-right:15px;display:inline-block;margin-top:20px;font-weight:600;padding:12px 25px;border-radius:25px;background:#3b82f6;transition: background 0.3s;}
-a.button:hover {background:#1e3a8a;}
-.emoji {font-size:1.2em;margin-right:5px;}
-.bottom-container {display:flex; gap:20px; flex-wrap:wrap;}
-.block {border-radius:15px; padding:25px; box-shadow:0 4px 12px rgba(0,0,0,0.08); display:flex; align-items:flex-start; gap:20px; background:white; flex:1;}
-@media(max-width:900px) {.bottom-container {flex-direction:column;}}
-@media (max-width: 768px) {header img {display:none;}}
+* {margin:0; padding:0; box-sizing:border-box; font-family:'Inter', sans-serif;}
+body, html {height:100%; background:#f8fafc; color:#333;}
 
-/* Contact section */
-.contact-section {text-align:center; margin-top:40px;}
-.contact-section p {font-weight:600; margin-bottom:10px; font-size:1.1em;}
-.contact-icons {display:inline-flex; gap:25px; align-items:center; justify-content:center; margin-top:10px;}
-.contact-icons img {width:50px; height:50px; object-fit:contain;}
+/* HEADER */
+header {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 50px;
+  min-height:85vh;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+}
 
-/* Reviews section */
-.reviews {background:#f3f4f6; padding:50px 20px; text-align:center; margin-top:50px;}
-.reviews h2 {font-size:2em; color:#1e3a8a; margin-bottom:30px;}
-.review-container {display:flex; flex-direction:row; gap:20px; justify-content:center; flex-wrap:wrap;}
-.review {background:white; padding:20px; border-radius:15px; max-width:300px; box-shadow:0 4px 12px rgba(0,0,0,0.08); text-align:left;}
-.review p {margin-bottom:10px; font-size:0.95em; color:#4b5563; line-height:1.4;}
-.author {font-weight:600; color:#111; font-size:0.9em;}
+.intro {
+  max-width:600px;
+  padding:0 15px;
+}
 
-@media(max-width:900px) {.review-container {flex-direction:column; align-items:center;}}
-@media(max-width:600px){.contact-icons img {width:40px;height:40px;}}
+.intro h1 {
+  font-size:2.8em;
+  margin-bottom:15px;
+  font-weight:700;
+  color:#1f2937;
+}
+
+.intro h2 {
+  font-size:1.4em;
+  margin-bottom:15px;
+  font-weight:600;
+  color:#2563eb;
+}
+
+.intro p {
+  font-size:1.05em;
+  margin-bottom:25px;
+  color:#4b5563;
+  line-height:1.5;
+}
+
+.btn {
+  display:inline-block;
+  margin-right:15px;
+  padding:12px 30px;
+  border-radius:30px;
+  background:#3b82f6;
+  color:white;
+  text-decoration:none;
+  font-weight:600;
+  transition:all 0.3s;
+}
+
+.btn:hover {
+  background:#1e3a8a;
+}
+
+.photo {
+  flex-shrink:0;
+  width:60%;
+  max-width:250px;
+  height:auto;
+  border-radius:50%;
+  border:4px solid #fff;
+  object-fit:cover;
+  box-shadow:0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* CONTACT */
+.contact-block {
+  display:flex; 
+  flex-direction:column; 
+  align-items:center; 
+  gap:10px; 
+  text-align:center; 
+  margin-top:20px;
+  color:#1f2937;
+}
+
+.contact-block p {
+  font-size:1em;
+  margin-bottom:10px;
+  line-height:1.4;
+}
+
+.contact-icons {
+  display:flex; 
+  gap:15px; 
+  justify-content:center; 
+  align-items:center;
+}
+
+.contact-icons img {
+  width:50px; 
+  height:50px; 
+  object-fit:contain;
+}
+
+/* REVIEWS */
+.reviews {
+  background:#f3f4f6;
+  padding:50px 20px;
+  text-align:center;
+}
+
+.reviews h2 {
+  font-size:2em;
+  color:#1e3a8a;
+  margin-bottom:30px;
+}
+
+.review-container {
+  display:flex;
+  flex-direction:row;
+  gap:20px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.review {
+  background:white;
+  padding:25px 20px;
+  border-radius:20px;
+  max-width:280px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.12);
+  text-align:left;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.review:hover {
+  transform:translateY(-5px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.review p {
+  margin-bottom:15px;
+  font-size:0.95em;
+  color:#4b5563;
+  line-height:1.5;
+  word-wrap:break-word;
+}
+
+.author {
+  font-weight:600;
+  color:#111;
+  font-size:0.9em;
+  text-align:right;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px) {
+  header {
+    flex-direction:column;
+    text-align:center;
+    padding:40px 20px;
+  }
+
+  .photo {
+    margin-top:30px;
+  }
+
+  .review-container {
+    flex-direction:column;
+    align-items:center;
+  }
+}
+
+@media(max-width:600px) {
+  .photo {
+    max-width:200px;
+  }
+
+  .contact-icons img {
+    width:40px; 
+    height:40px;
+  }
+
+  .btn {
+    display:block;
+    margin:10px auto;
+    width:80%;
+    text-align:center;
+  }
+
+  .review {
+    max-width:90%;
+  }
+}
 </style>
 </head>
 <body>
+
 <header>
-  <a href="index.html" class="home-icon">⌂</a>
-  <h1>Arthur Chambat</h1>
-  <p>Mon Parcours</p>
-  <img src="photo.jpg" alt="Photo Arthur Chambat">
-  <div class="navbar">
-    <a href="about.html" class="active">About me</a>
-    <a href="tarifs.html">Tarifs</a>
+  <div class="intro">
+    <h1>Arthur Chambat</h1>
+    <h2>Expert en coaching pour admissions sélectives</h2>
+<p>Fort de mon parcours académique alliant le <strong>Bachelor de l’X</strong>, le <strong>Master in Management à HEC</strong>, le <strong>Master X-HEC Entrepreneur</strong> et un échange à l’<strong>EPFL</strong>, j’accompagne aujourd’hui les étudiants ambitieux à intégrer les programmes les plus sélectifs : Bachelor de l’X, admissions UCAS, et Masters en management par voie parallèle. Mon objectif est de mettre cette expérience unique à votre service pour maximiser vos chances de succès</p>
+    <a href="about.html" class="btn">En savoir plus sur moi</a>
+    <a href="tarifs.html" class="btn">Découvrir mes services</a>
+  </div>
+
+  <div style="display:flex; flex-direction:column; align-items:center;">
+    <img src="photo.jpg" alt="Photo Arthur Chambat" class="photo">
+
+    <div class="contact-block">
+      <p>Vous souhaitez un <strong>accompagnement personnalisé ? </strong></p>
+      <p>Pour un <strong>rendez-vous gratuit de 15 minutes</strong>, cliquez ci-dessous :</p>
+      <div class="contact-icons">
+        <a href="mailto:arthurchambat@gmail.com">
+          <img src="gmail.png" alt="Email">
+        </a>
+        <a href="https://wa.me/33782312325" target="_blank">
+          <img src="whatsapp.png" alt="WhatsApp">
+        </a>
+      </div>
+    </div>
   </div>
 </header>
 
-<div class="container">
-
-<div class="section-title">Grande École / HEC & X-HEC Entrepreneur</div>
-<div class="experience">
-  <img src="hec.png" alt="HEC Paris" class="exp-logo">
-  <div class="exp-content">
-    <h3>HEC Paris – MiM & X-HEC Entrepreneur 🎓</h3>
-    <ul>
-      <li><strong>2022–2026</strong></li>
-      <li><span class="emoji">🎯</span> Admission parallèle : GMAT 710, lettres de motivation et entretiens de motivation</li>
-      <li><span class="emoji">📊</span> Compétences acquises : management, stratégie, entrepreneuriat</li>
-      <li><span class="emoji">🤝</span> Leadership pratique via projets entrepreneuriaux</li>
-    </ul>
-  </div>
-</div>
-
-<div class="section-title">Bachelor / École Polytechnique</div>
-<div class="experience">
-  <img src="x.png" alt="École Polytechnique" class="exp-logo">
-  <div class="exp-content">
-    <h3>École Polytechnique 🎓</h3>
-    <ul>
-      <li><strong>2019–2022</strong></li>
-      <li><span class="emoji">📝</span> Admission sur dossier, entretiens de motivation et de mathématiques</li>
-      <li><span class="emoji">🌍</span> Exchange Semester EPFL – sélection via dossier, lettres de motivation et entretiens</li>
-      <li><span class="emoji">💡</span> Compétences acquises : analyse avancée, data science, résolution de problèmes complexes</li>
-    </ul>
-  </div>
-</div>
-
-<div class="section-title">Lycée & Admissions UK</div>
-<div class="bottom-container">
-  <div class="block">
-    <img src="france.png" alt="Lycée Français de Singapour" class="exp-logo">
-    <div class="exp-content">
-      <h3>Lycée Français de Singapour 🏫</h3>
-      <ul>
-        <li><strong>2017–2019</strong></li>
-        <li><span class="emoji">💬</span> International student – anglais avancé et adaptation à un environnement multiculturel</li>
-        <li><span class="emoji">📚</span> Rigueur académique et méthodologie</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="block">
-    <img src="ucas.png" alt="UCAS" class="exp-logo">
-    <div class="exp-content">
-      <h3>Admissions Bachelor 🇬🇧</h3>
-      <ul>
-        <li><span class="emoji">📝</span> Sélection via personal statement, tests d’aptitude (PAT pour Oxford), et entretiens</li>
-        <li><span class="emoji">🎓</span>Oxford, Imperial College, UCL</li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-<!-- Contact -->
-<div class="contact-section">
-  <p>Vous souhaitez un accompagnement personnalisé ?</p>
-  <p>Pour un <strong>rendez-vous gratuit de 15 minutes</strong>, cliquez ci-dessous :</p>
-  <div class="contact-icons">
-    <a href="mailto:arthurchambat@gmail.com">
-      <img src="gmail.png" alt="Email">
-    </a>
-    <a href="https://wa.me/33782312325" target="_blank">
-      <img src="whatsapp.png" alt="WhatsApp">
-    </a>
-  </div>
-</div>
-
-<!-- Reviews -->
 <section class="reviews">
   <h2>Ce que disent les étudiants</h2>
   <div class="review-container">
@@ -152,19 +244,5 @@ a.button:hover {background:#1e3a8a;}
   </div>
 </section>
 
-<!-- Footer links -->
-<div style="text-align:center; margin-top:30px; display:flex; justify-content:center; gap:20px;">
-  <a href="index.html" class="button">Retour à l'accueil</a>
-  <a href="tarifs.html" class="button">Voir mes services</a>
-</div>
-
-<!-- LinkedIn flottant -->
-<div style="position:fixed; top:50%; right:10px; transform:translateY(-50%); z-index:1000;">
-  <a href="https://www.linkedin.com/in/arthur-chambat/" target="_blank">
-    <img src="linkedin.png" alt="LinkedIn" style="width:40px; height:40px;">
-  </a>
-</div>
-
-</div>
 </body>
 </html>
