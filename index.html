@@ -1,221 +1,248 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arthur Chambat - Accueil</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    * {margin:0; padding:0; box-sizing:border-box; font-family:'Inter', sans-serif;}
-    body, html {height:100%;}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arthur Chambat - Accueil</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+* {margin:0; padding:0; box-sizing:border-box; font-family:'Inter', sans-serif;}
+body, html {height:100%; background:#f8fafc; color:#333;}
 
-    header {
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      padding:0 50px;
-      min-height:85vh;
-      background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
-    }
+/* HEADER */
+header {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 50px;
+  min-height:85vh;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+}
 
-    .intro {
-      max-width:600px;
-      padding:0 15px;
-    }
+.intro {
+  max-width:600px;
+  padding:0 15px;
+}
 
-    .intro h1 {
-      font-size:2.8em;
-      margin-bottom:15px;
-      font-weight:700;
-      color:#1f2937;
-    }
+.intro h1 {
+  font-size:2.8em;
+  margin-bottom:15px;
+  font-weight:700;
+  color:#1f2937;
+}
 
-    .intro h2 {
-      font-size:1.4em;
-      margin-bottom:15px;
-      font-weight:600;
-      color:#2563eb;
-    }
+.intro h2 {
+  font-size:1.4em;
+  margin-bottom:15px;
+  font-weight:600;
+  color:#2563eb;
+}
 
-    .intro p {
-      font-size:1.05em;
-      margin-bottom:25px;
-      color:#4b5563;
-      line-height:1.5;
-    }
+.intro p {
+  font-size:1.05em;
+  margin-bottom:25px;
+  color:#4b5563;
+  line-height:1.5;
+}
 
-    .btn {
-      display:inline-block;
-      margin-right:15px;
-      padding:12px 30px;
-      border-radius:30px;
-      background:#3b82f6;
-      color:white;
-      text-decoration:none;
-      font-weight:600;
-      transition:all 0.3s;
-    }
+.btn {
+  display:inline-block;
+  margin-right:15px;
+  padding:12px 30px;
+  border-radius:30px;
+  background:#3b82f6;
+  color:white;
+  text-decoration:none;
+  font-weight:600;
+  transition:all 0.3s;
+}
 
-    .btn:hover {
-      background:#1e3a8a;
-    }
+.btn:hover {
+  background:#1e3a8a;
+}
 
-    .photo {
-      flex-shrink:0;
-      width:60%;
-      max-width:250px;
-      height:auto;
-      border-radius:50%;
-      border:4px solid #fff;
-      object-fit:cover;
-      box-shadow:0 4px 20px rgba(0,0,0,0.1);
-    }
+.photo {
+  flex-shrink:0;
+  width:60%;
+  max-width:250px;
+  height:auto;
+  border-radius:50%;
+  border:4px solid #fff;
+  object-fit:cover;
+  box-shadow:0 4px 20px rgba(0,0,0,0.1);
+}
 
-    .contact-block {
-      display:flex; 
-      flex-direction:column; 
-      align-items:center; 
-      gap:10px; 
-      text-align:center; 
-      margin-top:20px;
-    }
+/* CONTACT */
+.contact-block {
+  display:flex; 
+  flex-direction:column; 
+  align-items:center; 
+  gap:10px; 
+  text-align:center; 
+  margin-top:20px;
+  color:#1f2937;
+}
 
-    .contact-icons {
-      display:flex; 
-      gap:15px; 
-      justify-content:center; 
-      align-items:center;
-    }
+.contact-block p {
+  font-size:1em;
+  margin-bottom:10px;
+  line-height:1.4;
+}
 
-    .contact-icons img {
-      width:50px; 
-      height:50px; 
-      object-fit:contain;
-    }
+.contact-icons {
+  display:flex; 
+  gap:15px; 
+  justify-content:center; 
+  align-items:center;
+}
 
-    /* Reviews section */
-    .reviews {
-      background:#f3f4f6;
-      padding:50px 20px;
-      text-align:center;
-    }
+.contact-icons img {
+  width:50px; 
+  height:50px; 
+  object-fit:contain;
+}
 
-    .reviews h2 {
-      font-size:2em;
-      color:#1e3a8a;
-      margin-bottom:30px;
-    }
+/* REVIEWS */
+.reviews {
+  background:#f3f4f6;
+  padding:50px 20px;
+  text-align:center;
+}
 
-    .review-container {
-      display:flex;
-      flex-direction:row;
-      gap:20px;
-      justify-content:center;
-      flex-wrap:wrap;
-    }
+.reviews h2 {
+  font-size:2em;
+  color:#1e3a8a;
+  margin-bottom:30px;
+}
 
-    .review {
-      background:white;
-      padding:20px;
-      border-radius:15px;
-      max-width:300px;
-      box-shadow:0 4px 12px rgba(0,0,0,0.08);
-      text-align:left;
-    }
+.review-container {
+  display:flex;
+  flex-direction:row;
+  gap:20px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
 
-    .review p {
-      margin-bottom:10px;
-      font-size:0.95em;
-      color:#4b5563;
-      line-height:1.4;
-    }
+.review {
+  background:white;
+  padding:25px 20px;
+  border-radius:20px;
+  max-width:280px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.12);
+  text-align:left;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
 
-    .author {
-      font-weight:600;
-      color:#111;
-      font-size:0.9em;
-    }
+.review:hover {
+  transform:translateY(-5px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
 
-    /* Responsive adjustments */
-    @media (max-width:900px) {
-      header {
-        flex-direction:column;
-        text-align:center;
-        padding:40px 20px;
-      }
+.review p {
+  margin-bottom:15px;
+  font-size:0.95em;
+  color:#4b5563;
+  line-height:1.5;
+  word-wrap:break-word;
+}
 
-      .photo {
-        margin-top:30px;
-      }
+.author {
+  font-weight:600;
+  color:#111;
+  font-size:0.9em;
+  text-align:right;
+}
 
-      .review-container {
-        flex-direction:column;
-        align-items:center;
-      }
-    }
+/* RESPONSIVE */
+@media(max-width:900px) {
+  header {
+    flex-direction:column;
+    text-align:center;
+    padding:40px 20px;
+  }
 
-    @media (max-width:600px) {
-      .photo {
-        max-width:200px;
-      }
+  .photo {
+    margin-top:30px;
+  }
 
-      .contact-icons img {
-        width:40px; 
-        height:40px;
-      }
+  .review-container {
+    flex-direction:column;
+    align-items:center;
+  }
+}
 
-      .btn {
-        display:block;
-        margin:10px auto;
-        width:80%;
-        text-align:center;
-      }
-    }
-  </style>
+@media(max-width:600px) {
+  .photo {
+    max-width:200px;
+  }
+
+  .contact-icons img {
+    width:40px; 
+    height:40px;
+  }
+
+  .btn {
+    display:block;
+    margin:10px auto;
+    width:80%;
+    text-align:center;
+  }
+
+  .review {
+    max-width:90%;
+  }
+}
+</style>
 </head>
 <body>
-  <header>
-    <div class="intro">
-      <h1>Arthur Chambat</h1>
-      <h2>Expert en coaching pour admissions sélectives</h2>
-      <p>Ancien étudiant du <strong>Bachelor de l’X</strong>, j’accompagne aujourd’hui les étudiants ambitieux à intégrer les programmes les plus sélectifs : Bachelor de l’X, admissions UCAS, et Masters en management par voie parallèle. Actuellement étudiant au <strong>MiM à HEC</strong> et en <strong>M2 du Master X HEC Entrepreneur</strong>, je mets mon expérience et mon expertise au service de vos ambitions pour maximiser vos chances de succès</p>      
-      <a href="about.html" class="btn">En savoir plus sur moi</a>
-      <a href="tarifs.html" class="btn">Découvrir mes services</a>
-    </div>
 
-    <div style="display:flex; flex-direction:column; align-items:center;">
-      <img src="photo.jpg" alt="Photo Arthur Chambat" class="photo">
+<header>
+  <div class="intro">
+    <h1>Arthur Chambat</h1>
+    <h2>Expert en coaching pour admissions sélectives</h2>
+    <p>Ancien étudiant du <strong>Bachelor de l’X</strong>, j’accompagne aujourd’hui les étudiants ambitieux à intégrer les programmes les plus sélectifs : Bachelor de l’X, admissions UCAS, et Masters en management par voie parallèle. Actuellement étudiant au <strong>MiM à HEC</strong> et en <strong>M2 du Master X HEC Entrepreneur</strong>, je mets mon expérience et mon expertise au service de vos ambitions pour maximiser vos chances de succès</p>      
+    <a href="about.html" class="btn">En savoir plus sur moi</a>
+    <a href="tarifs.html" class="btn">Découvrir mes services</a>
+  </div>
 
-      <div class="contact-block">
-        <p style="font-weight:600; margin:0;">Me contacter</p>
-        <div class="contact-icons">
-          <a href="mailto:arthurchambat@gmail.com">
-            <img src="gmail.png" alt="Email">
-          </a>
-          <a href="https://wa.me/33612345678" target="_blank">
-            <img src="whatsapp.png" alt="WhatsApp">
-          </a>
-        </div>
-      </div>
-    </div>
-  </header>
+  <div style="display:flex; flex-direction:column; align-items:center;">
+    <img src="photo.jpg" alt="Photo Arthur Chambat" class="photo">
 
-  <section class="reviews">
-    <h2>Ce que disent les étudiants</h2>
-    <div class="review-container">
-      <div class="review">
-        <p>"Arthur m’a aidé à structurer mes candidatures pour UCAS. Ses conseils étaient toujours très concrets et bienveillants, on sent qu’il a vécu le processus lui-même. Résultat : j’ai reçu deux offres dont celle que je visais en priorité."</p>
-        <p class="author">— Camille, admise à King's College London</p>
-      </div>
-      <div class="review">
-        <p>"Au départ j’étais vraiment stressé par les entretiens oraux, Arthur m’a fait passer plusieurs simulations. Grâce à ses retours précis et encourageants, j’ai gagné en confiance et ça a tout changé le jour J."</p>
-        <p class="author">— Thomas, intégré au Bachelor de l’X</p>
-      </div>
-      <div class="review">
-        <p>"Ce que j’ai le plus apprécié c’est sa disponibilité. Même tard le soir il prenait le temps de relire mes essais. On sent qu’il prend à cœur la réussite des étudiants qu’il accompagne."</p>
-        <p class="author">— Sarah, admise en Master à HEC</p>
+    <div class="contact-block">
+      <p>Vous souhaitez un <strong>accompagnement personnalisé ? </strong></p>
+      <p>Pour un <strong>rendez-vous gratuit de 15 minutes</strong>, cliquez ci-dessous :</p>
+      <div class="contact-icons">
+        <a href="mailto:arthurchambat@gmail.com">
+          <img src="gmail.png" alt="Email">
+        </a>
+        <a href="https://wa.me/33612345678" target="_blank">
+          <img src="whatsapp.png" alt="WhatsApp">
+        </a>
       </div>
     </div>
-  </section>
+  </div>
+</header>
+
+<section class="reviews">
+  <h2>Ce que disent les étudiants</h2>
+  <div class="review-container">
+    <div class="review">
+      <p>"Arthur m’a aidé à structurer mes candidatures pour UCAS. Ses conseils étaient toujours très concrets et bienveillants, on sent qu’il a vécu le processus lui-même. Résultat : j’ai reçu deux offres dont celle que je visais en priorité."</p>
+      <p class="author">— Camille, admise à King's College London</p>
+    </div>
+    <div class="review">
+      <p>"Au départ j’étais vraiment stressé par les entretiens oraux, Arthur m’a fait passer plusieurs simulations. Grâce à ses retours précis et encourageants, j’ai gagné en confiance et ça a tout changé le jour J."</p>
+      <p class="author">— Thomas, intégré au Bachelor de l’X</p>
+    </div>
+    <div class="review">
+      <p>"Ce que j’ai le plus apprécié c’est sa disponibilité. Même tard le soir il prenait le temps de relire mes essais. On sent qu’il prend à cœur la réussite des étudiants qu’il accompagne."</p>
+      <p class="author">— Sarah, admise en Master à HEC</p>
+    </div>
+  </div>
+</section>
+
 </body>
 </html>
